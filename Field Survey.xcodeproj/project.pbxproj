@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		7B74760C22793707005F254D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B74760B22793707005F254D /* AppDelegate.swift */; };
-		7B74760E22793707005F254D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B74760D22793707005F254D /* ViewController.swift */; };
 		7B74761122793707005F254D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B74760F22793707005F254D /* Main.storyboard */; };
 		7B7476132279370C005F254D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7476122279370C005F254D /* Assets.xcassets */; };
 		7B7476162279370C005F254D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7476142279370C005F254D /* LaunchScreen.storyboard */; };
 		7B7476212279370C005F254D /* Field_SurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7476202279370C005F254D /* Field_SurveyTests.swift */; };
+		7B74762E2279487C005F254D /* FieldSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B74762D2279487C005F254D /* FieldSurveyViewController.swift */; };
+		7B747630227948C7005F254D /* FieldSurveyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B74762F227948C7005F254D /* FieldSurveyDetailViewController.swift */; };
+		7B74763222795233005F254D /* FieldSurveyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B74763122795233005F254D /* FieldSurveyTableViewCell.swift */; };
+		7B747635227953C6005F254D /* FieldSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B747634227953C6005F254D /* FieldSurvey.swift */; };
+		7B74763722795489005F254D /* observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B74763622795489005F254D /* observations.json */; };
+		7B747639227954C0005F254D /* FieldSurveyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B747638227954C0005F254D /* FieldSurveyLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +33,6 @@
 /* Begin PBXFileReference section */
 		7B74760822793707005F254D /* Field Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Field Survey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B74760B22793707005F254D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B74760D22793707005F254D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B74761022793707005F254D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B7476122279370C005F254D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B7476152279370C005F254D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +40,12 @@
 		7B74761C2279370C005F254D /* Field SurveyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Field SurveyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7476202279370C005F254D /* Field_SurveyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field_SurveyTests.swift; sourceTree = "<group>"; };
 		7B7476222279370C005F254D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B74762D2279487C005F254D /* FieldSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyViewController.swift; sourceTree = "<group>"; };
+		7B74762F227948C7005F254D /* FieldSurveyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyDetailViewController.swift; sourceTree = "<group>"; };
+		7B74763122795233005F254D /* FieldSurveyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyTableViewCell.swift; sourceTree = "<group>"; };
+		7B747634227953C6005F254D /* FieldSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurvey.swift; sourceTree = "<group>"; };
+		7B74763622795489005F254D /* observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = observations.json; path = ../../../../../../../observations.json; sourceTree = "<group>"; };
+		7B747638227954C0005F254D /* FieldSurveyLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +87,15 @@
 		7B74760A22793707005F254D /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
+				7B7476332279539D005F254D /* Model */,
 				7B74760B22793707005F254D /* AppDelegate.swift */,
-				7B74760D22793707005F254D /* ViewController.swift */,
 				7B74760F22793707005F254D /* Main.storyboard */,
 				7B7476122279370C005F254D /* Assets.xcassets */,
 				7B7476142279370C005F254D /* LaunchScreen.storyboard */,
 				7B7476172279370C005F254D /* Info.plist */,
+				7B74762D2279487C005F254D /* FieldSurveyViewController.swift */,
+				7B74762F227948C7005F254D /* FieldSurveyDetailViewController.swift */,
+				7B74763122795233005F254D /* FieldSurveyTableViewCell.swift */,
 			);
 			path = "Field Survey";
 			sourceTree = "<group>";
@@ -94,6 +107,16 @@
 				7B7476222279370C005F254D /* Info.plist */,
 			);
 			path = "Field SurveyTests";
+			sourceTree = "<group>";
+		};
+		7B7476332279539D005F254D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B74763622795489005F254D /* observations.json */,
+				7B747634227953C6005F254D /* FieldSurvey.swift */,
+				7B747638227954C0005F254D /* FieldSurveyLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B74763722795489005F254D /* observations.json in Resources */,
 				7B7476162279370C005F254D /* LaunchScreen.storyboard in Resources */,
 				7B7476132279370C005F254D /* Assets.xcassets in Resources */,
 				7B74761122793707005F254D /* Main.storyboard in Resources */,
@@ -197,8 +221,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B74760E22793707005F254D /* ViewController.swift in Sources */,
+				7B747635227953C6005F254D /* FieldSurvey.swift in Sources */,
 				7B74760C22793707005F254D /* AppDelegate.swift in Sources */,
+				7B74762E2279487C005F254D /* FieldSurveyViewController.swift in Sources */,
+				7B74763222795233005F254D /* FieldSurveyTableViewCell.swift in Sources */,
+				7B747630227948C7005F254D /* FieldSurveyDetailViewController.swift in Sources */,
+				7B747639227954C0005F254D /* FieldSurveyLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
